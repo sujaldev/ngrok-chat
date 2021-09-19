@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #EFF2F9;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #5899E9;
+}
+
+main {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 75vh;
+    max-height: 75vh;
+    background: white;
+    box-shadow: 1px 1px 20px 3px rgba(88, 153, 233, 0.2);
+    border-radius: 20px 20px 0 0;
+    padding: 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    width: 15px;
+}
+
+main::-webkit-scrollbar-track {
+    margin: 10px 0 10px 0;
+}
+
+main::-webkit-scrollbar-thumb {
+    border-left: 8px solid #5899E9;
+}
+
+.message-author {
+    font-size: 10px;
+    color: #4A5565;
+    margin: 0 5px 5px 0;
+}
+
+.message-author:after {
+    content: ":";
+}
+
+.message-content {
+    display: inline-block;
+    padding: 10px;
+    background: #1BA0FF;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 1px 10px 20px 3px rgba(27, 160, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.message-time {
+    margin-left: 10px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 1px 10px 20px 3px rgba(88, 153, 233, 0.2);
+    padding: 20px;
+    font-weight: 700;
+    color: #4A5565;
+}
+
+footer label {
+    min-width: 80%;
+}
+
+footer label input {
+    border: none;
+    outline: none;
+    min-width: 90%;
+    background: rgba(0, 0, 0, 0.015);
+    padding: 10px;
+}
+
+footer button {
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #5899E9;
+}
+
+footer button:hover {
+    color: #7ca4de;
+}
